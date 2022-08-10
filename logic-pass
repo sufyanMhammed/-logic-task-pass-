@@ -1,0 +1,33 @@
+Sufyan Muhammed
+
+Q1/
+stringold = "Sufyan Muhammed"
+xchar= input('char: ')
+stringnew = stringold .replace(xchar,  '')
+print(stringnew)
+
+---------------
+
+Q2/
+lowernum = int(input('lower number: '))
+uppernum = int(input('higher number: '))
+
+print("Prime numbers from", lowernum, "to", uppernum, "are:")
+
+for num in range(lowernum, uppernum + 1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
+           
+---------------
+
+Q3/
+mystring="sufyan muhammed"
+xchar= input('the character: ')
+counter = mystring.count(xchar) 
+
+print ('The count of ' + xchar + ' is: ' + str(counter))
